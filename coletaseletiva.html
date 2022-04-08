@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/map.css" rel="stylesheet">
+    <link href="assets/css/styleMapBootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <main id="main">
+        <div class="container lixo-text">
+            <h2>"EU QUERO SEPARAR O LIXO, MAS <span class="destaque">NÃO SEI ONDE, QUANDO E COMO</span> DESCARTAR"</h2>
+            <div class="row banner-coleta">
+                <div class="col descricao-coleta col-lg-7 col-md-6 col-sm-6">
+                    <h5>Essa é a resposta de várias pessoas. É muito provavel que existam dúvidas com relação a coleta seletiva</h5>
+                    <p class="questions">Onde eu descarto? Devo lavar? Que dia passa a coleta seletiva? Preciso ter uma lixeira para cada tipo de material?</p>
+                    <p class="small">calma! calma! calma!</p>
+                    <p class="dadosEuReciclo">Uma enquete realizada pelo Instituto Brasileiro de Defesa do Consumidor, idec, <mark>32%</mark> dos consumidores brasileiros afirmaram que <mark>ainda não sabem como</mark> dar um fim de forma correta ao seu resíduo. Para outros
+                        <mark>31% faltam informações orientativas</mark> para a destinação correta.</p>
+                    <p class="small">Fonte: eureciclo e Idec</p>
+
+                    <p class="final-text">Para ajudar nesse processo, a E3 UFSC centralizou a informações sobre reciclagem e coleta seletiva para você. Se essa página te ajudar, ajude o planeta compartilhando esse site.</p>
+                </div>
+                <div class="col col-lg-5 col-md-6 col-sm-6 imageIntro">
+                    <img src="https://blush.design/api/download?shareUri=U0maRdxtOs8C6GPV&c=Bottom_0%7E393f82-0.1%7E89c5cc-0.2%7E393f82_Hair_0%7E2c1b18-0.1%7E4a312c-0.2%7Ee8e1e1_Skin_0%7E915b3c-0.1%7Eb28b67-0.2%7E57331f_Top_0%7Eff4133-0.1%7E43d26c-0.2%7E43d26c&w=800&h=800&fm=png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="container">
+            <h6 style="text-align: center;">Clique em uma opção abaixo</h6>
+            <div class="row">
+                <div class="col services col-lg-6 col-md-6 col-sm-6">
+                    <ul class="testeUl">
+                        <!-- <li class="item" data="whoDescart" onclick="scrollWin()">
+                            <h4 class="item" data="whoDescart" onclick="scrollWin()">Como descartar?</h4>
+                            <p class="item" data="whoDescart" onclick="scrollWin()">Como fazer o descarte adequadamente.</p>
+                        </li> -->
+                        <li class="item" data="consultColect" onclick="scrollWin2()">
+                            <h4 class="item" data="consultColect" onclick="scrollWin2()">Qual o dia da coleta seletiva no meu bairro?</h4>
+                            <p class="item" data="consultColect" onclick="scrollWin2()">Consulte aqui o dia da coleta seletiva no seu bairro.</p>
+                        </li>
+                        <li class="item" data="mapColect" onclick="scrollWin2()">
+                            <h4 class="item" data="mapColect" onclick="scrollWin2()">Mapa de pontos de coleta seletiva</h4>
+                            <p class="item" data="mapColect" onclick="scrollWin2()">Mapa interativo com pontos de descarte voluntário, os famosos PEV's.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="cepService" class="cep col col-lg-6">
+                    <h4>Digite seu CEP abaixo</h4>
+                    <small>SOMENTE PARA FLORIANÓPOLIS</small>
+                    <div class="digitCep">
+                        <input id="cep" type="text" placeholder="88040-900" onblur="pesquisacep(this.value);" onkeypress="$(this).mask('00000-000');">
+                        <button class="btSearch"><i class="fas fa-search"></i></button>
+                    </div>
+                    <h5 class="textColect " id="valueBairroEl"></h5>
+                </div>
+                <div id="capaService" class="col col-lg-6 titleKnowMore ">
+                    <h2>Como podemos te ajudar?</h2>
+                    <img src="/assets/img/help-undraw.svg ">
+                    <p><i class="fas fa-angle-left "></i> Clique em uma opção ao lado</p>
+                </div>
+                <div id="mapService" class="col col-lg-6 mapColectSel">
+                    <p class="small ">Clique no <img src="./assets/img/icon-map.jpg "> abaixo para filtrar os pontos por material (vidro, pilha, óleo, eletrônicos...)</p>
+                    <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1x0epfkc6SxcoV1W4t2Bp9uPswLaoEvbt&z=10" width="100%" height="480"></iframe>
+                </div>
+                <div id="descartService" class="whoDescartDesc">
+                    <div class="intro">
+                        <div class="titleIntro">
+                            <h3>Tudo sobre o descarte adequado</h3>
+                            <p>Sem enrolação, vamos </p>
+                        </div>
+                        <div class="question-descart">
+                            <h6><strong>Preciso ter uma lixeira para cada tipo de material?</strong></h6>
+                            <p>Se você possuir uma empresa, podemos dizer que é obrigatório, porém estamos abordando o assunto para você aplicar em sua casa.</p>
+                            <p>Recomendação: Quanto mais separado melhor, se você tiver espaço em sua casa show de bola, se não divida em 2 lixeiras, reciclaveis e orgânicos.</p>
+                            <h6><strong>Devo lavar?</strong></h6>
+                            <p>Sim, os materiais contaminados não são reciclaveis</p>
+                            <h6><strong>Onde eu descarto?</strong></h6>
+                            <p>Você pode consultar por CEP aqui em nosso site, o dia e hora da coleta seletiva no seu bairro, também disponibilizamos um mapa com pontos de coleta voluntária.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h6><strong>Outros casos: Produtos com 1 ou mais materiais diferentes:</strong></h6>
+                        <p>Você pode se deparar com isso, por exemplo: Garrafa de vidro com rótulo de plástico ou um pote de iogurte com tampa de aluminio</p>
+                        <p>Colabore com a coleta seletiva, separe esse rótulo do exemplo a cima do vidro, a tampa de aluminio do plástico e coloque na sua lixeira de recicláveis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $("#cep").keyup(function(event) {
+            if (event.keyCode === 13) {
+                $(pesquisacep(this.value)).click();
+            }
+        });
+    </script>
+</body>
+</html>
