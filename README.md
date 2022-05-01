@@ -9,8 +9,4 @@ Projects using:
 Want to check the work? access the link of the website for which it was developed
 
 
-<div style="display: inline_block"><br/>
-    <img align="center" alt="" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-</div><br/>
-
 link - https://e3.ufsc.br/
